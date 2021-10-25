@@ -7,7 +7,7 @@ router.get("/create", async (_, res) => {
   try {
     // console.log(models);
     const product = await models.Product.create({
-      name: "Dell Laptop",
+      name: "Samsung",
       categoryId: 2,
     });
     res.json(product);

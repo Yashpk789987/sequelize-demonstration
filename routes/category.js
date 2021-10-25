@@ -7,7 +7,7 @@ router.get("/create", async (_, res) => {
   try {
     // console.log(models);
     const category = await models.Category.create({
-      name: "coolers",
+      name: "mobiles",
     });
     res.json(category);
   } catch (error) {

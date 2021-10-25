@@ -19,7 +19,7 @@ module.exports = (Sequelize, DataTypes) => {
     });
 
     Order.belongsToMany(models.Product, {
-      through: "orderItem",
+      through: models.OrderItem,
     });
   };
 

@@ -8,7 +8,7 @@ router.get("/create", async (_, res) => {
     // console.log(models);
     const customer = await models.Customer.create({
       name: "Akhilesh",
-      email: "akhilesh21289@gmail.com",
+      email: "akhilesh2128@gmail.com",
       password: "12345",
     });
     res.json(customer);

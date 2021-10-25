@@ -42,6 +42,7 @@ const db = {
   Product: require("./Product")(sequelize, Sequelize.DataTypes),
   Customer: require("./Customer")(sequelize, Sequelize.DataTypes),
   Order: require("./Order")(sequelize, Sequelize.DataTypes),
+  OrderItem: require("./OrderItem")(sequelize, Sequelize.DataTypes),
 };
 
 Object.keys(db).forEach((modelName) => {

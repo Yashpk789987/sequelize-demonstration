@@ -22,7 +22,6 @@ app.listen(port, () => {
 async function syncdb() {
   try {
     await models.sequelize.sync({ force: false, alter: false });
-    // await models.Product.destroy({ truncate: true });
     console.log("db connected");
   } catch (error) {
     console.log(error, "db connected error");
