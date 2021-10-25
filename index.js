@@ -3,17 +3,11 @@ const app = express();
 const models = require("./models");
 const port = 3000 || process.env.PORT;
 
-const AdminRouter = require("./routes/admin");
-const CategoryRouter = require("./routes/category");
-const ProductRouter = require("./routes/product");
-const CustomerRouter = require("./routes/customer");
-const OrderRouter = require("./routes/order");
+const ActorRouter = require("./routes/actor");
+const MovieRouter = require("./routes/movie");
 
-app.use("/admin", AdminRouter);
-app.use("/category", CategoryRouter);
-app.use("/product", ProductRouter);
-app.use("/customer", CustomerRouter);
-app.use("/order", OrderRouter);
+app.use("/actor", ActorRouter);
+app.use("/movie", MovieRouter);
 
 app.listen(port, () => {
   console.log(`server started at http://localhost:${port}`);

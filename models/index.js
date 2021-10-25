@@ -37,12 +37,8 @@ const sequelize = new Sequelize(__DB__, {
 //   });
 
 const db = {
-  Admin: require("./Admin")(sequelize, Sequelize.DataTypes),
-  Category: require("./Category")(sequelize, Sequelize.DataTypes),
-  Product: require("./Product")(sequelize, Sequelize.DataTypes),
-  Customer: require("./Customer")(sequelize, Sequelize.DataTypes),
-  Order: require("./Order")(sequelize, Sequelize.DataTypes),
-  OrderItem: require("./OrderItem")(sequelize, Sequelize.DataTypes),
+  Actor: require("./Actor")(sequelize, Sequelize.DataTypes),
+  Movie: require("./Movie")(sequelize, Sequelize.DataTypes),
 };
 
 Object.keys(db).forEach((modelName) => {
